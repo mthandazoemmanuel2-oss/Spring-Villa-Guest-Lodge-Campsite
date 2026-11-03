@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Auto-publish website on save",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}\\.vscode\\auto-publish.ps1"
+      ],
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": "^$"
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "^Auto-publish watcher started",
+            "endsPattern": "^Auto-publish watcher stopped"
+          }
+        }
+      ],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "dedicated",
+        "clear": false
+      }
+    }
+  ]
+}
