@@ -12,17 +12,8 @@
         "-File",
         "${workspaceFolder}\\.vscode\\auto-publish.ps1"
       ],
-      "isBackground": true,
       "runOptions": {
         "runOn": "folderOpen"
-      },
-      "problemMatcher": {
-        "base": "$tsc-watch",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^Auto-publish watcher started",
-          "endsPattern": "^Auto-publish watcher stopped"
-        }
       },
       "presentation": {
         "echo": true,
