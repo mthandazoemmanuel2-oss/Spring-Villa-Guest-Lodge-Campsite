@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find Spring Villa Guest Lodge in Victoria Falls, Zimbabwe, using an interactive Google map." />
+    <title>Find Us | Spring Villa Guest Lodge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=booking-layout" />
+  </head>
+  <body class="brand-page">
+    <header class="site-header"><div class="container header-inner">
+      <a class="brand-wrap" href="index.html" aria-label="Spring Villa home"><img class="brand-mark" src="Spring villa logo.png" alt="Spring Villa logo" /><span class="brand-text"><span class="brand-name">Spring Villa</span><span class="brand-subtitle">Guest Lodge &amp; Campsite</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="stay.html">Stay</a><a href="campsite.html">Campsite</a><a href="activities.html">Activities</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
+      <a class="primary-btn" href="contact.html">Contact the lodge</a>
+    </div></header>
+    <main>
+      <section class="brand-page-hero map-page-hero"><div class="container brand-page-hero-copy"><p class="eyebrow">Victoria Falls, Zimbabwe</p><h1>Find Spring Villa.</h1><p>Explore the supplied location on an interactive map and open Google Maps for directions.</p></div></section>
+      <section class="section-space">
+        <div class="container">
+          <div class="map-panel">
+            <div class="map-controls" role="group" aria-label="Map display">
+              <button class="map-layer-button" type="button" data-map-layer="m" aria-pressed="true">Street map</button>
+              <button class="map-layer-button" type="button" data-map-layer="k" aria-pressed="false">Satellite view</button>
+              <a class="map-layer-button" href="https://www.google.com/maps/search/?api=1&amp;query=Spring+Villa+Guest+Lodge+and+Campsite%2C+Victoria+Falls%2C+Zimbabwe" target="_blank" rel="noopener noreferrer">Open Google Maps</a>
+            </div>
+            <iframe
+              class="map-frame"
+              id="springVillaMap"
+              title="Interactive map search for Spring Villa Guest Lodge and Campsite in Victoria Falls, Zimbabwe"
+              src="https://maps.google.com/maps?q=Spring%20Villa%20Guest%20Lodge%20and%20Campsite%2C%20Victoria%20Falls%2C%20Zimbabwe&amp;t=m&amp;z=14&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+            <p class="map-note">This map searches the lodge name and the supplied city, Victoria Falls, Zimbabwe. An exact street address or verified coordinates were not provided, so confirm the precise lodge pin and directions with Spring Villa before travelling. Satellite imagery is not live video and may not show current conditions.</p>
+          </div>
+          <div class="contact-detail">
+            <span>Need help finding the lodge?</span>
+            <p>Call <a href="tel:+263790399484">+263 790 399 484</a> or <a href="mailto:springvillaguestlodge@gmail.com">email Spring Villa</a>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><div class="brand-wrap footer-brand"><img class="brand-mark" src="Spring villa logo.png" alt="Spring Villa logo" /><div class="brand-text"><span class="brand-name">Spring Villa</span><span class="brand-subtitle">Guest Lodge &amp; Campsite</span></div></div><p>Victoria Falls, Zimbabwe.</p></div><div><h3>Explore</h3><ul><li><a href="about.html">About</a></li><li><a href="stay.html">Stay</a></li><li><a href="campsite.html">Campsite</a></li></ul></div><div><h3>Discover</h3><ul><li><a href="activities.html">Activities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div></div><div class="footer-bottom"><div class="container">© 2026 Spring Villa Guest Lodge &amp; Campsite</div></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
