@@ -16,21 +16,14 @@
       "runOptions": {
         "runOn": "folderOpen"
       },
-      "problemMatcher": [
-        {
-          "pattern": [
-            {
-              "regexp": "^AUTO-PUBLISH ERROR: (.*)$",
-              "message": 1
-            }
-          ],
-          "background": {
-            "activeOnStart": true,
-            "beginsPattern": "^Auto-publish watcher started",
-            "endsPattern": "^Auto-publish watcher stopped"
-          }
+      "problemMatcher": {
+        "base": "$tsc-watch",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^Auto-publish watcher started",
+          "endsPattern": "^Auto-publish watcher stopped"
         }
-      ],
+      },
       "presentation": {
         "echo": true,
         "reveal": "always",
