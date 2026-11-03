@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prepare an accommodation availability request for Spring Villa Guest Lodge & Campsite." />
+    <title>Booking request | Spring Villa Guest Lodge &amp; Campsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=booking-layout" />
+  </head>
+  <body class="booking-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-wrap" href="index.html" aria-label="Spring Villa home">
+          <img class="brand-mark" src="Spring villa logo.png" alt="Spring Villa logo" />
+          <span class="brand-text">
+            <span class="brand-name">Spring Villa</span>
+            <span class="brand-subtitle">Guest Lodge &amp; Campsite</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="stay.html" aria-current="page">Stay</a>
+          <a href="campsite.html">Campsite</a>
+          <a href="activities.html">Activities</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="primary-btn" href="contact.html">Contact the lodge</a>
+      </div>
+    </header>
+
+    <main class="container booking-main">
+      <a class="back-link" href="stay.html">← Back to accommodation</a>
+      <ol class="booking-progress" aria-label="Booking request progress">
+        <li class="current" aria-current="step"><span>1</span> Your details</li>
+        <li><span>2</span> Review request</li>
+      </ol>
+
+      <div class="checkout-layout">
+        <section class="content-card checkout-panel" aria-labelledby="bookingTitle">
+          <p class="eyebrow eyebrow-dark">Plan your stay</p>
+          <h1 id="bookingTitle">Request availability</h1>
+          <p>Share your stay details and contact information. You’ll review the request before sending it to the lodge by WhatsApp or email.</p>
+
+          <form id="bookingRequestForm" class="booking-form">
+            <div class="checkout-subsection">
+              <h2>Stay details</h2>
+              <label for="stayType">Accommodation</label>
+              <select id="stayType" name="stayType" required>
+                <option value="standard-room">Standard room · Acacia Rest</option>
+                <option value="family-unit">Family unit · Family Nest</option>
+                <option value="campsite">Campsite · Starlit Lawn</option>
+              </select>
+
+              <label for="roomPreference">Preferred bedroom (optional)</label>
+              <input id="roomPreference" name="roomPreference" type="text" maxlength="80" autocomplete="off" />
+
+              <div class="booking-fields-row">
+                <div>
+                  <label for="checkIn">Check-in</label>
+                  <input id="checkIn" name="checkIn" type="date" required />
+                </div>
+                <div>
+                  <label for="checkOut">Check-out</label>
+                  <input id="checkOut" name="checkOut" type="date" required />
+                </div>
+              </div>
+
+              <label for="guestCount">Guests</label>
+              <select id="guestCount" name="guestCount" required>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5+">5+ guests</option>
+              </select>
+            </div>
+
+            <div class="checkout-subsection">
+              <h2>Your contact details</h2>
+              <label for="guestName">Full name</label>
+              <input id="guestName" name="guestName" type="text" autocomplete="name" maxlength="100" required />
+
+              <label for="guestPhone">Phone / WhatsApp number</label>
+              <input id="guestPhone" name="guestPhone" type="tel" autocomplete="tel" maxlength="40" required />
+
+              <label for="guestEmail">Email (optional)</label>
+              <input id="guestEmail" name="guestEmail" type="email" autocomplete="email" maxlength="120" />
+
+              <label for="guestNotes">Additional requests (optional)</label>
+              <textarea id="guestNotes" name="guestNotes" rows="4" maxlength="500"></textarea>
+            </div>
+
+            <p class="notice notice-info">This is an availability enquiry, not a confirmed reservation. The lodge will confirm availability, room details, rates, and booking terms with you.</p>
+            <button class="primary-btn booking-submit" type="submit">Review request</button>
+            <p id="bookingFormMessage" class="notice notice-info" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <aside class="content-card booking-summary" aria-labelledby="bookingHelpTitle">
+          <h2 id="bookingHelpTitle">Before you continue</h2>
+          <ul class="approval-checklist">
+            <li>Rates, room capacity, and amenities are confirmed directly by Spring Villa.</li>
+            <li>Your request is sent only after you review it and send it by WhatsApp or email.</li>
+            <li>A reservation is confirmed only when the lodge replies and confirms it.</li>
+          </ul>
+          <div class="contact-card">
+            <strong>Need help with your request?</strong>
+            <a href="tel:+263790399484">+263 790 399 484</a>
+            <a href="mailto:springvillaguestlodge@gmail.com">springvillaguestlodge@gmail.com</a>
+            <a href="contact.html">Contact the lodge</a>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="booking-footer">
+      <div class="container">© 2026 Spring Villa Guest Lodge &amp; Campsite · <a href="contact.html">Contact</a></div>
+    </footer>
+    <script src="booking-flow.js"></script>
+  </body>
+</html>

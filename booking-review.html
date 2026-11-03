@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Review your Spring Villa availability request before sending it to the lodge." />
+    <title>Review booking request | Spring Villa Guest Lodge &amp; Campsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=booking-layout" />
+  </head>
+  <body class="booking-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-wrap" href="index.html" aria-label="Spring Villa home">
+          <img class="brand-mark" src="Spring villa logo.png" alt="Spring Villa logo" />
+          <span class="brand-text">
+            <span class="brand-name">Spring Villa</span>
+            <span class="brand-subtitle">Guest Lodge &amp; Campsite</span>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="stay.html" aria-current="page">Stay</a>
+          <a href="campsite.html">Campsite</a>
+          <a href="activities.html">Activities</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="primary-btn" href="contact.html">Contact the lodge</a>
+      </div>
+    </header>
+
+    <main class="container booking-main">
+      <a class="back-link" href="booking.html?edit=1">← Edit request</a>
+      <ol class="booking-progress" aria-label="Booking request progress">
+        <li class="complete"><span>✓</span> Your details</li>
+        <li class="current" aria-current="step"><span>2</span> Review request</li>
+      </ol>
+
+      <div class="checkout-layout">
+        <section class="content-card checkout-panel" aria-labelledby="reviewTitle">
+          <p class="eyebrow eyebrow-dark">One last look</p>
+          <h1 id="reviewTitle">Review your request</h1>
+          <p>Check your details, then send your availability enquiry to Spring Villa by WhatsApp or email.</p>
+
+          <dl id="bookingReviewDetails" class="summary-details"></dl>
+          <p id="bookingReviewError" class="notice notice-warning" role="alert" hidden></p>
+
+          <div class="checkout-actions">
+            <a id="sendBookingRequest" class="primary-btn" href="#" target="_blank" rel="noopener noreferrer">Continue to WhatsApp</a>
+            <a id="sendBookingEmail" class="outline-btn" href="#">Send by email</a>
+            <a class="outline-btn" href="booking.html?edit=1">Edit request</a>
+          </div>
+          <p id="bookingSendMessage" class="notice notice-info" role="status" aria-live="polite">
+            Your request is sent only after you send it from WhatsApp or your email app. Your stay is not reserved until Spring Villa confirms it.
+          </p>
+        </section>
+
+        <aside class="content-card booking-summary" aria-labelledby="bookingSummaryTitle">
+          <h2 id="bookingSummaryTitle">What happens next?</h2>
+          <ol class="approval-checklist">
+            <li>Choose WhatsApp or email to open your request in that app.</li>
+            <li>Review the message and send it to the lodge.</li>
+            <li>The lodge will reply to confirm availability, rates, and the next steps.</li>
+          </ol>
+          <p class="notice notice-info">No payment is collected on this website.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="booking-footer">
+      <div class="container">© 2026 Spring Villa Guest Lodge &amp; Campsite · <a href="contact.html">Contact</a></div>
+    </footer>
+    <script src="booking-flow.js"></script>
+  </body>
+</html>
