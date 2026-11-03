@@ -20,7 +20,8 @@
         {
           "pattern": [
             {
-              "regexp": "^$"
+              "regexp": "^AUTO-PUBLISH ERROR: (.*)$",
+              "message": 1
             }
           ],
           "background": {

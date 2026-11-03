@@ -53,7 +53,7 @@ try {
 
         $status = & $git status --porcelain --untracked-files=all
         if ($LASTEXITCODE -ne 0) {
-            Write-Error 'Could not inspect repository changes; auto-publish will retry after the next save.'
+            Write-Output 'AUTO-PUBLISH ERROR: Could not inspect repository changes; auto-publish will retry after the next save.'
             continue
         }
         if (-not $status) {
@@ -62,7 +62,7 @@ try {
 
         & $git add --all
         if ($LASTEXITCODE -ne 0) {
-            Write-Error 'Git could not stage the changes; auto-publish will retry after the next save.'
+            Write-Output 'AUTO-PUBLISH ERROR: Git could not stage the changes; auto-publish will retry after the next save.'
             continue
         }
 
@@ -71,20 +71,20 @@ try {
             continue
         }
         if ($LASTEXITCODE -ne 1) {
-            Write-Error 'Git could not compare staged changes; auto-publish will retry after the next save.'
+            Write-Output 'AUTO-PUBLISH ERROR: Git could not compare staged changes; auto-publish will retry after the next save.'
             continue
         }
 
         $commitMessage = 'Auto-publish: ' + (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
         & $git commit -m $commitMessage -m 'Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>'
         if ($LASTEXITCODE -ne 0) {
-            Write-Error 'Git could not create the auto-publish commit. Check the task output and resolve the issue.'
+            Write-Output 'AUTO-PUBLISH ERROR: Git could not create the auto-publish commit. Check the task output and resolve the issue.'
             continue
         }
 
         & $git push origin main
         if ($LASTEXITCODE -ne 0) {
-            Write-Error 'Push failed. The commit remains local; authenticate with GitHub and save a file again to retry.'
+            Write-Output 'AUTO-PUBLISH ERROR: Push failed. The commit remains local; authenticate with GitHub and save a file again to retry.'
             continue
         }
 
