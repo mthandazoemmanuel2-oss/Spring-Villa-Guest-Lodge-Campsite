@@ -168,7 +168,8 @@ function initializeBookingReview() {
   });
 
   const message = [
-    "Hello Spring Villa, I would like to ask about availability.",
+    "Hello Spring Villa Guest Lodge & Campsite team,",
+    `I would like to make an enquiry on ${bookingStays[draft.stayType]}.`,
     `Accommodation: ${bookingStays[draft.stayType]}`,
     `Preferred bedroom: ${draft.roomPreference || "No preference"}`,
     `Check-in: ${draft.checkIn}`,
