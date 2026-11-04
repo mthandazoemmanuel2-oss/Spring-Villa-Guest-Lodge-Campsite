@@ -1702,25 +1702,6 @@ select:focus-visible {
   font-size: 0.94rem;
 }
 
-.activity-reference-note {
-  max-width: 900px;
-  margin: 28px auto 0;
-  padding: 15px 18px;
-  border: 1px solid rgba(35, 75, 56, 0.12);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--muted);
-  font-size: 0.8rem;
-  line-height: 1.65;
-}
-
-.activity-reference-note a {
-  color: var(--primary);
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
 .activity-card a {
   color: var(--primary);
   font-weight: 800;
