@@ -640,10 +640,6 @@ select:focus-visible {
   background-image: url('IMG_9526.jpg.jpeg');
 }
 
-.image-two {
-  background-image: url('IMG_9530.jpg.jpeg');
-}
-
 .image-three {
   background-image: url('IMG_9502.jpg.jpeg');
 }
@@ -1583,7 +1579,7 @@ select:focus-visible {
 }
 
 .map-page-hero {
-  background-image: linear-gradient(90deg, rgba(22, 55, 40, 0.94), rgba(22, 55, 40, 0.48)), url("Spring Villa...12.jpg");
+  background-image: linear-gradient(90deg, rgba(22, 55, 40, 0.94), rgba(22, 55, 40, 0.48)), url("Spring Villa...11.jpg");
 }
 
 .map-panel {
@@ -1779,12 +1775,10 @@ select:focus-visible {
 .item-6 { background-image: url('Spring Villa...6.jpg'); }
 .item-7 { background-image: url('Spring Villa...7.jpg'); }
 .item-10 { background-image: url('Spring Villa...10.jpg'); }
-.item-12 { background-image: url('Spring Villa...12.jpg'); }
 .item-13 { background-image: url('Spring Villa...13.jpg'); }
 .item-bedroom-one { background-image: url('IMG_9526.jpg.jpeg'); }
-.item-bedroom-two { background-image: url('IMG_9530.jpg.jpeg'); }
+.item-bedroom-two { background-image: url('IMG_9123.jpg'); }
 .item-bedroom-three { background-image: url('IMG_9531.jpg.jpeg'); }
-.item-bedroom-four { background-image: url('IMG_9533.jpg.jpeg'); }
 
 .gallery-item:focus-visible,
 .stay-card a:focus-visible,

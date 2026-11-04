@@ -9,7 +9,7 @@ const accommodationOptions = {
     name: "Family-friendly comfort",
     description: "A family-friendly accommodation option. Contact the lodge to confirm its layout, capacity, amenities, and current rate.",
     rate: "$100 USD / night",
-    images: ["Bedroom3.jpg", "IMG_9530.jpg.jpeg", "IMG_9531.jpg.jpeg", "IMG_9533.jpg.jpeg"],
+    images: ["IMG_9123.jpg", "IMG_9531.jpg.jpeg"],
   },
   campsite: {
     name: "Camp beneath the stars",
